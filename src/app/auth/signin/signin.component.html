@@ -18,8 +18,10 @@
                           <mat-label>Password</mat-label>
                           <input id="password" type="password" matInput placeholder="Password" formControlName="password"/>
                         </mat-form-field>
-                        <button class="mat-button" mat-raised-button color="primary" (click)="onClick()" >login</button>
-
+                        <!-- <button class="mat-button" mat-raised-button color="primary" (click)="onClick()" >login</button> -->
+                        <app-button [buttonType]="'mat-button'" [colorBtn]="'warn'" [title]="'login'" (submitValue)="onClick()">  </app-button>
+                        <!-- [buttonType]="'mat-button'" -->
+                        <app-input [formGroup]="formGroup" [formFields]="formFields"></app-input>
                       </form>
                 </mat-tab>
                 <mat-tab label="signup"> 

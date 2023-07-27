@@ -1,1 +1,20 @@
-<p>signup works!</p>
+<form class="example-form" [formGroup]="registerForm">
+    <mat-form-field class="example-full-width">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="text" value="" formControlName="name">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Email" value="" formControlName="email">
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>Password</mat-label>
+      <input type="password" matInput placeholder="Password" formControlName="password"/>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>confirme Password</mat-label>
+      <input type="password" matInput placeholder="Password" formControlName="password2"/>
+    </mat-form-field>
+    <button class="mat-button" mat-raised-button color="primary" (click)="onClick()">register</button>
+  </form>  

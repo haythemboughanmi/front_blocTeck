@@ -1,0 +1,6 @@
+<form [formGroup]="formGroup">
+    <div *ngFor="let field of formFields">
+      <label>{{ field.label }}</label>
+      <input [type]="field.type" [formControlName]="field.name" />
+    </div>
+  </form>
